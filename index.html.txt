@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigneshwara Speciality Clinic</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #333;
+            background-color: #f7f9fc;
+        }
+
+        /* HEADER */
+        header {
+            background: #0A2A43;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 24px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        nav .btn-appoint {
+            background: #1ABC9C;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(10,42,67,0.7), rgba(10,42,67,0.7)), url('https://images.unsplash.com/photo-1580281658627-2de686c0f5a1?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 110px 20px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* DOCTOR SECTION */
+        .doctor {
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .doctor h2 {
+            color: #0A2A43;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .doctor p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .appointment-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background: #1ABC9C;
+            color: white;
+            padding: 14px 26px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        /* SERVICES */
+        .services {
+            padding: 60px 40px;
+            background: #eef2f6;
+        }
+
+        .services h2 {
+            text-align: center;
+            color: #0A2A43;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .service-box {
+            max-width: 700px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-left: 5px solid #0A2A43;
+            font-size: 18px;
+            border-radius: 4px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ADDRESS + MAP */
+        .address {
+            padding: 60px 40px;
+            background: white;
+            text-align: center;
+        }
+
+        .address h2 {
+            color: #0A2A43;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .address p {
+            font-size: 18px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 300px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 60px 40px;
+            background: #eef2f6;
+        }
+
+        .contact h2 {
+            text-align: center;
+            color: #0A2A43;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            background: #0A2A43;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0A2A43;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        /* WHATSAPP FLOAT */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 14px 18px;
+            border-radius: 50%;
+            font-size: 26px;
+            text-decoration: none;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Vigneshwara Speciality Clinic</div>
+    <nav>
+        <a href="#doctor">Doctor</a>
+        <a href="#services">Services</a>
+        <a href="#address">Address</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-appoint" href="https://wa.me/918277609453" target="_blank">Book Appointment</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Vigneshwara Speciality Clinic</h1>
+    <p>Comprehensive Internal Medicine Care You Can Trust</p>
+</section>
+
+<section class="doctor" id="doctor">
+    <h2>Dr. R. Shankar Prasad</h2>
+    <p><strong>MBBS, MD (Internal Medicine)</strong></p>
+    <p>Consultation Timings: <strong>Mon – Sat, 7 PM – 9 PM</strong></p>
+
+    <a class="appointment-btn" href="https://wa.me/918277609453" target="_blank">
+        📅 Book Appointment Online
+    </a>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+        <strong>Internal Medicine Consultation</strong><br>
+        Expert diagnosis and management of adult medical conditions.
+    </div>
+</section>
+
+<section class="address" id="address">
+    <h2>Clinic Address</h2>
+    <p><strong>Opp. Bata Showroom, Srinivasanagar, Bangalore – 560050</strong></p>
+
+    <!-- GOOGLE MAP -->
+    <iframe 
+        src="https://www.google.com/maps?q=Srinivasanagar,+Bangalore+560050&output=embed">
+    </iframe>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Message:</label>
+        <textarea rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a class="whatsapp-btn" href="https://wa.me/918277609453" target="_blank">💬</a>
+
+<footer>
+    © 2025 Vigneshwara Speciality Clinic. All Rights Reserved.
+</footer>
+
+</body>
+</html>
